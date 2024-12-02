@@ -25,6 +25,7 @@ var (
 	GRPC             = echo.Port{Name: "grpc", Protocol: protocol.GRPC, ServicePort: 7070, WorkloadPort: 17070}
 	HTTP2            = echo.Port{Name: "http2", Protocol: protocol.HTTP, ServicePort: 85, WorkloadPort: 18085}
 	TCP              = echo.Port{Name: "tcp", Protocol: protocol.TCP, ServicePort: 9090, WorkloadPort: 19090}
+	Random           = echo.Port{Name: "random", Protocol: protocol.TCP, ServicePort: 909, WorkloadPort: 1909}
 	HTTPS            = echo.Port{Name: "https", Protocol: protocol.HTTPS, ServicePort: 443, WorkloadPort: 18443, TLS: true}
 	TCPServer        = echo.Port{Name: "tcp-server", Protocol: protocol.TCP, ServicePort: 9091, WorkloadPort: 16060, ServerFirst: true}
 	AutoTCP          = echo.Port{Name: "auto-tcp", Protocol: protocol.TCP, ServicePort: 9092, WorkloadPort: 19091}

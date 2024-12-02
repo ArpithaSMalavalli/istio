@@ -2755,7 +2755,7 @@ func externalNameCases(t TrafficContext) {
 		checks = append(checks, check.OK())
 		ch := []TrafficCall{}
 		for _, c := range t.Apps.A {
-			for _, port := range []echo.Port{ports.HTTP, ports.AutoHTTP, ports.TCP, ports.HTTPS} {
+			for _, port := range []echo.Port{ports.HTTP, ports.AutoHTTP, ports.TCP, ports.HTTPS, ports.Random} {
 				ch = append(ch, TrafficCall{
 					name: port.Name,
 					call: c.CallOrFail,
